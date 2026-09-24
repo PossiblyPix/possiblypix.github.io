@@ -69,3 +69,82 @@
             height: 100%;
             text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
+/* shit for game buttons on game page */
+.games-page {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 10px 0 40px;
+    font-family: Lexend;
+}
+
+.page-title {
+    margin: 0 0 24px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.game-card {
+    display: flex;
+    min-width: 0;
+    padding: 12px;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    background: rgba(37, 5, 54, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.game-card:hover,
+.game-card:focus-visible {
+    background: rgba(73, 0, 157, 0.85);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.game-image {
+    display: flex;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.game-title {
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .game-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .games-page {
+        width: min(100% - 24px, 420px);
+    }
+
+    .game-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+}
