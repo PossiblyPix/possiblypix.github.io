@@ -8,6 +8,12 @@
   font-family: Lexend;
 }
 
+p {
+  font-family: Lexend;
+  color: white;
+  text-align: center;
+}
+
 .nav-btn {
   background: #7700c6;
   color: white;
@@ -16,6 +22,7 @@
   border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: Lexend;
 }
 
 .nav-btn:hover {
