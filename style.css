@@ -68,6 +68,11 @@
             height: 100%;
             text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
+
+        .centered-image {
+            display: block;
+            margin: 0 auto;
+        }
 /* shit for game buttons on game page */
 .games-page {
     width: min(1200px, calc(100% - 40px));
